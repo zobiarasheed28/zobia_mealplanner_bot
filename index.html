@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zobia's Meal Planner Bot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-icon">
+                    <img src="/static/logo.png" alt="Meal Planner Logo">
+                </div>
+                <div class="sidebar-title">Zobia's Meal Planner Bot</div>
+            </div>
+            <button class="new-chat-btn">+ New Plan</button>
+            <div class="chat-list"></div>
+        </aside>
+
+        <!-- Main Content -->
+        <div id="main-content">
+            <!-- Welcome Screen -->
+            <h1 id="welcome-title">Plan Your Meals with Zobia</h1>
+            <div id="welcome-message">
+                <div class="quick-actions">
+                    <div class="quick-action" data-question="Suggest a healthy breakfast.">
+                        <span>Breakfast Ideas</span>
+                    </div>
+                    <div class="quick-action" data-question="Give me a vegetarian lunch plan.">
+                        <span>Vegetarian Lunch</span>
+                    </div>
+                    <div class="quick-action" data-question="Suggest a high-protein dinner.">
+                        <span>High-Protein Dinner</span>
+                    </div>
+                    <div class="quick-action" data-question="What are some budget-friendly meals?">
+                        <span>Budget Meals</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Box -->
+            <div id="chat-box"></div>
+
+            <!-- Input Area -->
+            <div id="message-input">
+                <input type="text" id="user-input" placeholder="Ask about meals, recipes, or diet plans...">
+                <button id="send-btn">↑</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
